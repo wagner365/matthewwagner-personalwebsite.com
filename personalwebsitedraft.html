@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matthew J. Wagner — Finance & Venture</title>
+<meta name="description" content="Matthew J. Wagner — Finance student, Miami University. Candidacy memo for finance and venture roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F1B2E;
+    --navy-line:#243349;
+    --paper:#F8F5EC;
+    --ink:#1B1F2A;
+    --ink-soft:#52584F;
+    --gold:#B8862F;
+    --gold-deep:#8E6520;
+    --sage:#5F7A5E;
+    --rule:#DAD3C2;
+    --rule-navy: rgba(216,196,150,0.22);
+    --shadow: 0 30px 60px -20px rgba(0,0,0,0.45), 0 10px 20px -10px rgba(0,0,0,0.3);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(circle at 18% 8%, #16273f 0%, transparent 45%),
+      radial-gradient(circle at 85% 92%, #16263d 0%, transparent 50%),
+      var(--navy);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+  }
+
+  .desk{
+    padding: 56px 20px 90px;
+    display:flex;
+    justify-content:center;
+  }
+
+  .memo{
+    width:100%;
+    max-width:880px;
+    background:var(--paper);
+    box-shadow:var(--shadow);
+    border-radius:3px;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .memo::before{
+    content:"";
+    position:absolute;
+    top:0; left:0; right:0;
+    height:6px;
+    background:linear-gradient(90deg, var(--gold) 0%, var(--gold) 18%, transparent 18%, transparent 22%, var(--sage) 22%, var(--sage) 30%, transparent 30%);
+    opacity:.85;
+  }
+
+  /* ---------- nav ---------- */
+  nav{
+    position:sticky;
+    top:0;
+    z-index:20;
+    display:flex;
+    gap:2px;
+    flex-wrap:wrap;
+    background:var(--paper);
+    border-bottom:1px solid var(--rule);
+    padding:14px 36px;
+    font-family:'IBM Plex Mono', monospace;
+  }
+  nav a{
+    color:var(--ink-soft);
+    text-decoration:none;
+    font-size:11px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    padding:6px 10px;
+    border-radius:2px;
+    transition:color .15s, background .15s;
+  }
+  nav a:hover, nav a:focus-visible{ color:var(--gold-deep); background:rgba(184,134,47,.1); outline:none; }
+
+  section{ padding:46px 36px; border-bottom:1px solid var(--rule); }
+  section:last-of-type{ border-bottom:none; }
+
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--gold-deep);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:0 0 18px;
+  }
+  .eyebrow::after{ content:""; flex:1; height:1px; background:var(--rule); }
+
+  /* ---------- masthead ---------- */
+  .masthead{ padding:44px 36px 30px; }
+  .masthead h1{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:clamp(34px, 5.4vw, 52px);
+    letter-spacing:-0.01em;
+    margin:0 0 6px;
+    line-height:1.02;
+  }
+  .masthead .role{
+    font-size:15px;
+    color:var(--ink-soft);
+    margin:0 0 26px;
+  }
+  .memo-meta{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    border-top:1px solid var(--rule);
+    padding-top:18px;
+    display:grid;
+    grid-template-columns:90px 1fr;
+    row-gap:8px;
+  }
+  .memo-meta dt{ color:var(--ink-soft); letter-spacing:.06em; }
+  .memo-meta dd{ margin:0; }
+  .tag-live{
+    color:var(--sage);
+    font-weight:600;
+  }
+  .tag-live::before{
+    content:"";
+    display:inline-block;
+    width:6px; height:6px;
+    border-radius:50%;
+    background:var(--sage);
+    margin-right:7px;
+    box-shadow:0 0 0 3px rgba(95,122,94,.18);
+  }
+
+  /* ---------- hero / thesis ---------- */
+  .thesis{ position:relative; }
+  .thesis h2{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-style:italic;
+    font-size:clamp(24px, 3.4vw, 32px);
+    line-height:1.32;
+    margin:0 0 22px;
+    max-width:620px;
+  }
+  .thesis h2 mark{
+    background:none;
+    color:var(--ink);
+    box-shadow: inset 0 -0.42em 0 rgba(184,134,47,.28);
+  }
+  .thesis p{
+    font-size:15.5px;
+    line-height:1.7;
+    color:#34394a;
+    max-width:600px;
+    margin:0 0 0;
+  }
+  .stamp{
+    position:absolute;
+    top:-6px; right:8px;
+    width:128px; height:128px;
+    border:2px solid var(--gold);
+    border-radius:50%;
+    transform:rotate(11deg);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:var(--gold-deep);
+    font-family:'IBM Plex Mono', monospace;
+    opacity:.92;
+  }
+  .stamp .inner{
+    border:1px solid var(--gold);
+    border-radius:50%;
+    width:108px; height:108px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    line-height:1.3;
+  }
+  .stamp .big{ font-size:10.5px; font-weight:600; letter-spacing:.05em; }
+  .stamp .small{ font-size:8.5px; margin-top:4px; letter-spacing:.06em; opacity:.85;}
+
+  /* ---------- track record / ledger ---------- */
+  .ledger{ list-style:none; margin:8px 0 0; padding:0; position:relative; }
+  .ledger::before{
+    content:"";
+    position:absolute;
+    top:6px; bottom:6px; left:118px;
+    width:1px;
+    background:var(--rule);
+  }
+  .entry{
+    display:grid;
+    grid-template-columns:118px 1fr;
+    column-gap:24px;
+    padding:22px 0;
+    position:relative;
+  }
+  .entry + .entry{ border-top:1px dashed var(--rule); }
+  .entry .when{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    color:var(--ink-soft);
+    padding-top:3px;
+  }
+  .entry .when::before{
+    content:"";
+    position:absolute;
+    left:114px; top:9px;
+    width:9px; height:9px;
+    border-radius:50%;
+    background:var(--paper);
+    border:2px solid var(--gold);
+  }
+  .entry h3{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:18px;
+    margin:0 0 2px;
+  }
+  .entry .org{
+    font-size:13px;
+    color:var(--gold-deep);
+    font-weight:600;
+    margin:0 0 10px;
+  }
+  .entry ul{ margin:0; padding-left:18px; }
+  .entry li{ font-size:14px; line-height:1.6; color:#34394a; margin-bottom:5px; }
+
+  /* ---------- education ---------- */
+  .cards{ display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:6px; }
+  .card{
+    border:1px solid var(--rule);
+    border-top:3px solid var(--gold);
+    padding:20px 20px 22px;
+    background:#fffdf8;
+  }
+  .card h3{
+    font-family:'Fraunces', serif;
+    font-size:16.5px;
+    margin:0 0 4px;
+  }
+  .card .meta{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    margin-bottom:10px;
+    letter-spacing:.02em;
+  }
+  .card ul{ margin:0; padding-left:16px; }
+  .card li{ font-size:13.5px; line-height:1.6; color:#34394a; }
+  .gpa{
+    display:inline-block;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--sage);
+    font-weight:600;
+    margin-top:8px;
+  }
+
+  /* ---------- capabilities ---------- */
+  .tagset{ display:flex; flex-wrap:wrap; gap:9px; margin-top:6px;}
+  .tagset span{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:.02em;
+    padding:8px 13px;
+    border:1px solid var(--rule);
+    border-radius:20px;
+    color:#34394a;
+    background:#fffdf8;
+  }
+
+  /* ---------- beyond ---------- */
+  .two-col{ display:grid; grid-template-columns:1.3fr 1fr; gap:34px; }
+  .two-col h4{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin:0 0 14px;
+  }
+  .involve-item{ margin-bottom:16px; }
+  .involve-item .t{ font-size:14.5px; font-weight:600; margin:0 0 2px; }
+  .involve-item .d{ font-size:12.5px; color:var(--ink-soft); font-family:'IBM Plex Mono', monospace; margin:0 0 4px;}
+  .involve-item p{ font-size:13.5px; line-height:1.6; color:#34394a; margin:0; }
+  .interests{ display:flex; flex-wrap:wrap; gap:8px; align-content:flex-start; }
+  .interests span{
+    font-size:12.5px;
+    padding:6px 11px;
+    background:rgba(95,122,94,.1);
+    color:var(--sage);
+    border-radius:3px;
+    font-weight:600;
+  }
+
+  /* ---------- footer / contact ---------- */
+  .closing{
+    background:var(--navy);
+    color:#E9E4D6;
+    padding:50px 36px 40px;
+  }
+  .closing .eyebrow{ color:var(--gold); }
+  .closing .eyebrow::after{ background:var(--rule-navy); }
+  .closing h2{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:clamp(22px,3vw,28px);
+    margin:0 0 14px;
+    max-width:520px;
+  }
+  .closing p.lead{ color:#C7C2B2; font-size:14.5px; line-height:1.7; max-width:480px; margin:0 0 30px;}
+  .contact-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-bottom:30px;
+  }
+  .contact-row a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:#E9E4D6;
+    text-decoration:none;
+    border:1px solid var(--rule-navy);
+    padding:11px 16px;
+    border-radius:2px;
+    transition:border-color .15s, color .15s;
+  }
+  .contact-row a:hover, .contact-row a:focus-visible{ border-color:var(--gold); color:var(--gold); outline:none; }
+  .btn-primary{
+    background:var(--gold);
+    color:var(--navy) !important;
+    border:1px solid var(--gold) !important;
+    font-weight:600;
+  }
+  .btn-primary:hover, .btn-primary:focus-visible{ background:#c99a3c; color:var(--navy) !important; }
+  .signoff{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-size:14px;
+    color:#8A8470;
+    border-top:1px solid var(--rule-navy);
+    padding-top:18px;
+  }
+
+  /* ---------- reveal animation ---------- */
+  .reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+  @media (prefers-reduced-motion: reduce){
+    .reveal{ opacity:1; transform:none; transition:none; }
+    html{ scroll-behavior:auto; }
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:680px){
+    .desk{ padding:0; }
+    .memo{ border-radius:0; }
+    section, .masthead, .closing{ padding-left:22px; padding-right:22px; }
+    .memo-meta{ grid-template-columns:78px 1fr; }
+    .stamp{ position:static; transform:rotate(-3deg); margin:22px 0 0; }
+    .entry{ grid-template-columns:1fr; row-gap:6px; }
+    .ledger::before{ display:none; }
+    .entry .when::before{ display:none; }
+    .cards{ grid-template-columns:1fr; }
+    .two-col{ grid-template-columns:1fr; gap:26px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="desk">
+  <main class="memo">
+
+    <nav aria-label="Section navigation">
+      <a href="#thesis">Thesis</a>
+      <a href="#record">Track Record</a>
+      <a href="#education">Education</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#beyond">Beyond the Balance Sheet</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <header class="masthead reveal">
+      <h1>Matthew&nbsp;J.&nbsp;Wagner</h1>
+      <p class="role">Finance · Entrepreneurship Minor · Farmer School of Business, Miami University</p>
+      <dl class="memo-meta">
+        <dt>TO</dt><dd>Hiring Teams &amp; Investment Committees</dd>
+        <dt>RE</dt><dd>Candidacy — Finance &amp; Venture Internships, 2027–2028</dd>
+        <dt>FROM</dt><dd>Matthew J. Wagner</dd>
+        <dt>DATE</dt><dd>June 2026</dd>
+        <dt>STATUS</dt><dd class="tag-live">Actively interviewing</dd>
+      </dl>
+    </header>
+
+    <section id="thesis" class="thesis reveal">
+      <p class="eyebrow">Thesis</p>
+      <h2>A finance student who <mark>builds before he's asked to.</mark></h2>
+      <p>
+        I'm a rising junior at Miami University's Farmer School of Business, pairing a finance degree
+        with an entrepreneurship minor. This summer I'm inside Rocket Companies' Center of Excellence,
+        translating client feedback into action plans for executives. Outside of internships, I've designed
+        a startup's brand identity from scratch, pitched original ventures under 48-hour deadlines, and
+        spent a year in front of credit union members solving real financial problems. I'm looking for a team
+        where that same bias toward building gets put to work on capital, companies, and deals.
+      </p>
+      <div class="stamp" aria-hidden="true">
+        <div class="inner">
+          <span class="big">COVERAGE<br>INITIATED</span>
+          <span class="small">RATING — HIGH CONVICTION</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="record" class="reveal">
+      <p class="eyebrow">Track Record</p>
+      <ul class="ledger">
+
+        <li class="entry">
+          <div class="when">MAY 2026 —<br>AUG 2026</div>
+          <div>
+            <h3>Center of Excellence Intern</h3>
+            <p class="org">Rocket Companies · Detroit, MI</p>
+            <ul>
+              <li>Support Feedback Action Squads identifying client experience gaps across business lines</li>
+              <li>Collaborate with internal stakeholders to develop data-driven recommendations for client satisfaction</li>
+              <li>Contribute to executive-facing presentations summarizing squad findings and proposed action plans</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="entry">
+          <div class="when">NOV 2025 —<br>PRESENT</div>
+          <div>
+            <h3>Refounding Team</h3>
+            <p class="org">Houses of Oxford · Oxford, OH</p>
+            <ul>
+              <li>Design brand visuals and shape early creative direction for a local startup</li>
+              <li>Align design decisions with company mission, vision, and overall strategy</li>
+              <li>Built the startup's logo through multiple revisions into a clean, modern local identity</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="entry">
+          <div class="when">FEB 2025 —<br>SEPT 2025</div>
+          <div>
+            <h3>Finance Intern</h3>
+            <p class="org">First Miami Student Credit Union · Oxford, OH</p>
+            <ul>
+              <li>Delivered day-to-day banking service to Miami students and alumni</li>
+              <li>Recommended tailored financial solutions, lifting engagement and retention</li>
+              <li>Gained hands-on exposure to retail banking and credit union compliance standards</li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <section id="education" class="reveal">
+      <p class="eyebrow">Education &amp; Credentials</p>
+      <div class="cards">
+        <div class="card">
+          <h3>B.S. Finance, Entrepreneurship Minor</h3>
+          <p class="meta">Farmer School of Business · Miami University · Oxford, OH · Grad. May 2028</p>
+          <ul>
+            <li>2nd place, 2025 Entrepreneurship Road Test Pitch Competition</li>
+            <li>Coursework: Business Calculus &amp; Computing, Economics, Supply Chain &amp; Operations, Accounting</li>
+          </ul>
+          <span class="gpa">GPA 3.6 / 4.0</span>
+        </div>
+        <div class="card">
+          <h3>Investment Foundations Certificate</h3>
+          <p class="meta">CFA Institute · Issued February 2026</p>
+          <ul>
+            <li>Foundational knowledge of global markets, investment roles, and industry structure</li>
+            <li>Grounded in ethics, portfolio basics, and financial decision-making frameworks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities" class="reveal">
+      <p class="eyebrow">Capabilities</p>
+      <div class="tagset">
+        <span>Financial Fundamentals</span>
+        <span>Microsoft Excel &amp; Office</span>
+        <span>Client-Facing Communication</span>
+        <span>Executive Presentations</span>
+        <span>Leadership</span>
+        <span>Time Management</span>
+        <span>Risk Assessment</span>
+        <span>Creative Problem-Finding</span>
+        <span>Brand &amp; Visual Strategy</span>
+      </div>
+    </section>
+
+    <section id="beyond" class="reveal">
+      <p class="eyebrow">Beyond the Balance Sheet</p>
+      <div class="two-col">
+        <div>
+          <h4>Leadership &amp; Involvement</h4>
+          <div class="involve-item">
+            <p class="t">Side Hustle Club, Miami University</p>
+            <p class="d">Oct 2024 — Present</p>
+            <p>Work alongside 30+ student entrepreneurs on branding, marketing, and growth strategy across ventures, with risk always part of the conversation.</p>
+          </div>
+          <div class="involve-item">
+            <p class="t">Startup Weekend by Techstars</p>
+            <p class="d">November 2024</p>
+            <p>Identified a global problem with a team of strangers, built a working solution, and pitched it to judges and mentors — all inside 48 hours.</p>
+          </div>
+          <div class="involve-item">
+            <p class="t">National Student Leadership Conference, Sports Management</p>
+            <p class="d">June 2023</p>
+            <p>Ran a week-long operations simulation and sat in on panels with sports agents and industry professionals.</p>
+          </div>
+        </div>
+        <div>
+          <h4>Outside the Office</h4>
+          <div class="interests">
+            <span>Investing</span>
+            <span>Golf</span>
+            <span>Hockey</span>
+            <span>Lacrosse</span>
+            <span>Hunting</span>
+            <span>Cooking</span>
+            <span>Cards</span>
+            <span>Travel</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="closing reveal">
+      <p class="eyebrow">Open the Position</p>
+      <h2>Looking for finance and venture roles where I can start contributing on day one.</h2>
+      <p class="lead">Open to internships and analyst-track opportunities for 2027 and 2028. Happy to walk through any line of this memo in person.</p>
+      <div class="contact-row">
+        <a class="btn-primary" href="Matthew_Wagner_Resume.pdf" target="_blank" rel="noopener">Download Résumé ↓</a>
+        <a href="mailto:wagne237@miamioh.edu">wagne237@miamioh.edu</a>
+        <a href="tel:+12482962012">(248) 296-2012</a>
+        <a href="https://www.linkedin.com/in/matthewjwagner1" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <p class="signoff">— M.J.W., Oxford, OH</p>
+    </section>
+
+  </main>
+</div>
+
+<script>
+  const items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    items.forEach(i => io.observe(i));
+  } else {
+    items.forEach(i => i.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>
