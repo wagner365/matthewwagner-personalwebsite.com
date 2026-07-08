@@ -1,3 +1,179 @@
+
+/
+Claude finished the response
+
+Flagged data fabrication concern and mapped site rebuild scope
+Flagged data fabrication concern and mapped site rebuild scope
+Before I build this, one important flag: I'm not going to invent performance numbers for your investment portfolio. Even "above average" figures would be a fabricated track record, and that's a real risk to put in front of recruiters or on a resume-adjacent site — if it ever came up in an interview and you couldn't back it with actual statements, it undermines your credibility on the one thing finance people check hardest. If you can pull even rough real figures later (screenshot of a brokerage summary, approximate return over a specific window), send them and I'll use them. For now I'll describe the experience qualitatively (2+ years, active management, specific strategy/instruments) with no invented numbers.
+
+Good news on everything else — I pulled real detail from what you sent:
+
+Flow (heated gloves, ESP 201): full team pitch process — TAM/SAM/SOM work, competitor analysis, prototype testing, and the finance section you rebuilt because you decided to "use real numbers instead of unrealistic ones to get an easy grade." That's a genuinely good story.
+Houses of Oxford: real dashboard numbers — $960 revenue over first 4 weeks, 37.5% gross margin, break-even/inventory modeling, seasonal 52-week projection built around Miami's academic calendar.
+Northern Threads: real model — Year 1 base case ~$6,053 revenue, ~71% gross margin, ~$3,511 net operating income, break-even analysis across your hat/tee/hoodie mix.
+ESP 252 "C4" portfolio: this is honestly great material for your thesis rewrite — it's a documented process of scrapping an idea, almost giving up, and bringing it back anyway. That's a real worked-through-mistakes story in your own words.
+Window cleaning / lawn care: noted as ventures you ran, no saved figures — I'll describe these briefly and factually, no invented numbers.
+Startup Weekend: no deck found — I'll use the description you gave me.
+Let me check the design skill and then build this.
+
+
+Architected portfolio redesign integrating new project data and dynamic elements
+Architected portfolio redesign integrating new project data and dynamic elements
+Now let's build this. Given the scope, I'll create a shared stylesheet plus the main page and individual project pages.
+
+
+Reconciled design changes and architected project pages with authentic metrics
+Reconciled design changes and architected project pages with authentic metrics
+Now let me copy everything to outputs and share.
+
+
+Synthesized portfolio materials and charted GitHub integration strategy
+Synthesized portfolio materials and charted GitHub integration strategy
+That's the updated draft — 7 files total: index.html, style.css, and a projects folder with 5 case-study pages.
+
+What changed:
+
+Wealth management minor added throughout, "investment committees" dropped in favor of "Actively interviewing" status tag
+Thesis rewritten around building, breaking things, and rebuilding — leaning on the Flow financial rebuild, Houses of Oxford's real margins, and Northern Threads' pricing iteration
+Date auto-updates now (footer shows current month/year automatically, computed by the browser)
+New structure matching your friend's format: hero + stat strip → four "Domains" cards → Selected Projects grid linking to full case-study pages → experience timeline (kept, since yours was already solid) → education → contact card
+Investment portfolio project is described qualitatively — no invented performance numbers, as discussed
+One thing to flag on GitHub upload: this is now a multi-file site instead of one HTML file. When you upload to your repo, you need to preserve the folder structure — style.css sits next to index.html, and the projects folder needs to go in as an actual folder, not have its files dumped at the root. GitHub's drag-and-drop upload does support dragging a folder in, so you can drag all of this in at once and it should preserve the structure. Want me to walk through that upload once you're ready?
+
+For now — read through it and let me know what needs adjusting.
+
+
+Index
+Code · HTML 
+
+Style
+Code · CSS 
+
+Houses of oxford
+Code · HTML 
+
+Northern threads
+Code · HTML 
+
+Heated gloves
+Code · HTML 
+
+Startup weekend
+Code · HTML 
+
+Investment portfolio
+Code · HTML 
+just give me the whole thing right now and we can fix the small details later because i have to come back to this.
+
+
+Architected single-page app with hash routing and tab switching
+Architected single-page app with hash routing and tab switching
+can you continue fixing this personal portfolio
+
+Yep — go ahead and tell me what still needs fixing. To make sure we're both looking at the same thing: is this from the single-file version I just built (with the project subtabs), or did something break again after you uploaded it to GitHub?
+
+If it's easier, send a screenshot of what you're seeing right now and point out what's off, and I'll dig into the code and fix it directly.
+
+i want a link to my personal portfolio similar to my friends that i uploaded: same format with sub tabs, different color to match finance with my resume details and projects included
+
+
+Verified file state and prepared final portfolio output
+Verified file state and prepared final portfolio output
+Good news — I already built exactly that in my last step: single self-contained HTML file, same structural format as your friend's site (hero, stats, domains, project cards), with sub-tabs that switch to full project detail views right on the page (no separate files/pages), styled in the navy/charcoal/gold finance palette instead of his terracotta, and your actual resume details and all five projects included (Houses of Oxford, Northern Threads, Flow heated gloves, Startup Weekend, and your investment portfolio).
+
+Let me get that file out to you now.
+
+
+Ran a command, read a file
+Ran a command, read a file
+How it works:
+
+Nav bar ("Domains," "Projects," "Experience," "Education," "Contact") scrolls to sections on the main page
+Each project card under "Selected Projects" is a sub-tab — clicking it swaps the whole page into that project's detail view (metrics, story, what went wrong, what you learned), with a "← Back to projects" link to return
+Color palette: navy, charcoal, and muted gold on cream — clean, standard finance look, distinct from your friend's terracotta/black
+One file, self-contained: no external CSS or linked files, so this drops straight into GitHub as index.html with zero folder-structure risk
+Take a look and flag anything — copy tweaks, section order, colors, whatever's off — and we'll keep refining from here.
+
+
+Index
+Code · HTML 
+ok awesome now walk me thru how to upload this to github and save as a draft. also tell me how i can get the github link to put on my resume
+
+Here's the full walkthrough:
+
+1. Upload the file to your existing repo
+
+Go to your repo on github.com (the one you already set up — matthewwagner-personalwebsite.co)
+Click on the existing index.html file
+Click the pencil (✏️) icon in the top right to edit it
+Select all the existing content (Ctrl+A / Cmd+A) and delete it
+Paste in the new code from the file I just gave you (open it, copy everything)
+Scroll down and click Commit changes — this saves it as the new version
+Since you're overwriting index.html directly, there's no extra "save as draft" step needed — every commit is saved in your repo's history automatically. If you ever want to undo this and go back to an older version, GitHub keeps every past commit, so nothing is lost.
+
+2. Confirm it's live
+
+Give it 1-2 minutes for GitHub Pages to rebuild
+Visit your live URL (Settings → Pages will show you the exact link, something like https://wagner365.github.io/matthewwagner-personalwebsite.co/)
+Refresh and confirm the new design loaded
+3. Get the link for your resume
+
+That live URL is the link — go to Settings → Pages in your repo, and GitHub shows your published URL right at the top of that page
+Copy that exact URL and drop it on your resume under your name/contact info, usually formatted simply like wagner365.github.io/matthewwagner-personalwebsite.co
+One optional upgrade later: if you ever want something cleaner like matthewwagner.com instead of the github.io link, that's the custom domain step we skipped earlier — totally optional, not needed for resume use.
+
+Want me to walk through anything else once you've got it uploaded?
+
+walk me thru step by step in github
+
+
+Charted methodical GitHub walkthrough without external assistance
+Charted methodical GitHub walkthrough without external assistance
+Here's the exact click-by-click path:
+
+Step 1: Open your repo
+
+Go to github.com and log in
+Click your profile icon (top right) → Your repositories
+Click into matthewwagner-personalwebsite.co
+Step 2: Open the file editor
+
+On the main repo page, you'll see a file list — click on index.html
+You're now viewing the file's content
+In the top right of that file view, click the pencil icon (✏️) — this opens the edit mode
+Step 3: Clear out the old code
+
+Click anywhere inside the code box
+Press Ctrl+A (Windows) or Cmd+A (Mac) to select everything
+Press Delete or Backspace to clear it
+Step 4: Paste in the new code
+
+Open the HTML file I gave you, select all its content, and copy it
+Click back into GitHub's empty code box and paste (Ctrl+V / Cmd+V)
+Step 5: Commit the change
+
+Scroll down below the code box
+You'll see a section titled "Commit changes" with a small text box — you can leave the default message ("Update index.html") or type something like "New design with project subtabs"
+Make sure "Commit directly to the main branch" is selected (should be default)
+Click the green Commit changes button
+Step 6: Verify it's live
+
+Wait about a minute
+Go to Settings (top of repo) → Pages in the left sidebar
+Your live URL is shown near the top — click it or copy it
+Refresh that page in your browser and confirm the new design shows up
+That's it — no separate draft/publish step, since committing directly updates the live site. Let me know once you're through it or if anything on the GitHub screen looks different from what I described.
+
+
+
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,427 +185,262 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --navy:#0F1B2E;
-    --navy-line:#243349;
-    --paper:#F8F5EC;
-    --ink:#1B1F2A;
-    --ink-soft:#52584F;
-    --gold:#B8862F;
-    --gold-deep:#8E6520;
-    --sage:#5F7A5E;
-    --rule:#DAD3C2;
-    --rule-navy: rgba(216,196,150,0.22);
-    --shadow: 0 30px 60px -20px rgba(0,0,0,0.45), 0 10px 20px -10px rgba(0,0,0,0.3);
-  }
-
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:
-      radial-gradient(circle at 18% 8%, #16273f 0%, transparent 45%),
-      radial-gradient(circle at 85% 92%, #16263d 0%, transparent 50%),
-      var(--navy);
-    color:var(--ink);
-    font-family:'Inter', sans-serif;
-    -webkit-font-smoothing:antialiased;
-    min-height:100vh;
-  }
-
-  .desk{
-    padding: 56px 20px 90px;
-    display:flex;
-    justify-content:center;
-  }
-
-  .memo{
-    width:100%;
-    max-width:880px;
-    background:var(--paper);
-    box-shadow:var(--shadow);
-    border-radius:3px;
-    position:relative;
-    overflow:hidden;
-  }
-
-  .memo::before{
-    content:"";
-    position:absolute;
-    top:0; left:0; right:0;
-    height:6px;
-    background:linear-gradient(90deg, var(--gold) 0%, var(--gold) 18%, transparent 18%, transparent 22%, var(--sage) 22%, var(--sage) 30%, transparent 30%);
-    opacity:.85;
-  }
-
-  /* ---------- nav ---------- */
-  nav{
-    position:sticky;
-    top:0;
-    z-index:20;
-    display:flex;
-    gap:2px;
-    flex-wrap:wrap;
-    background:var(--paper);
-    border-bottom:1px solid var(--rule);
-    padding:14px 36px;
-    font-family:'IBM Plex Mono', monospace;
-  }
-  nav a{
-    color:var(--ink-soft);
-    text-decoration:none;
-    font-size:11px;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-    padding:6px 10px;
-    border-radius:2px;
-    transition:color .15s, background .15s;
-  }
-  nav a:hover, nav a:focus-visible{ color:var(--gold-deep); background:rgba(184,134,47,.1); outline:none; }
-
-  section{ padding:46px 36px; border-bottom:1px solid var(--rule); }
-  section:last-of-type{ border-bottom:none; }
-
-  .eyebrow{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-    color:var(--gold-deep);
-    display:flex;
-    align-items:center;
-    gap:10px;
-    margin:0 0 18px;
-  }
-  .eyebrow::after{ content:""; flex:1; height:1px; background:var(--rule); }
-
-  /* ---------- masthead ---------- */
-  .masthead{ padding:44px 36px 30px; }
-  .masthead h1{
-    font-family:'Fraunces', serif;
-    font-weight:600;
-    font-size:clamp(34px, 5.4vw, 52px);
-    letter-spacing:-0.01em;
-    margin:0 0 6px;
-    line-height:1.02;
-  }
-  .masthead .role{
-    font-size:15px;
-    color:var(--ink-soft);
-    margin:0 0 26px;
-  }
-  .memo-meta{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12.5px;
-    border-top:1px solid var(--rule);
-    padding-top:18px;
-    display:grid;
-    grid-template-columns:90px 1fr;
-    row-gap:8px;
-  }
-  .memo-meta dt{ color:var(--ink-soft); letter-spacing:.06em; }
-  .memo-meta dd{ margin:0; }
-  .tag-live{
-    color:var(--sage);
-    font-weight:600;
-  }
-  .tag-live::before{
-    content:"";
-    display:inline-block;
-    width:6px; height:6px;
-    border-radius:50%;
-    background:var(--sage);
-    margin-right:7px;
-    box-shadow:0 0 0 3px rgba(95,122,94,.18);
-  }
-
-  /* ---------- hero / thesis ---------- */
-  .thesis{ position:relative; }
-  .thesis h2{
-    font-family:'Fraunces', serif;
-    font-weight:500;
-    font-style:italic;
-    font-size:clamp(24px, 3.4vw, 32px);
-    line-height:1.32;
-    margin:0 0 22px;
-    max-width:620px;
-  }
-  .thesis h2 mark{
-    background:none;
-    color:var(--ink);
-    box-shadow: inset 0 -0.42em 0 rgba(184,134,47,.28);
-  }
-  .thesis p{
-    font-size:15.5px;
-    line-height:1.7;
-    color:#34394a;
-    max-width:600px;
-    margin:0 0 0;
-  }
-  .stamp{
-    position:absolute;
-    top:-6px; right:8px;
-    width:128px; height:128px;
-    border:2px solid var(--gold);
-    border-radius:50%;
-    transform:rotate(11deg);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:var(--gold-deep);
-    font-family:'IBM Plex Mono', monospace;
-    opacity:.92;
-  }
-  .stamp .inner{
-    border:1px solid var(--gold);
-    border-radius:50%;
-    width:108px; height:108px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    line-height:1.3;
-  }
-  .stamp .big{ font-size:10.5px; font-weight:600; letter-spacing:.05em; }
-  .stamp .small{ font-size:8.5px; margin-top:4px; letter-spacing:.06em; opacity:.85;}
-
-  /* ---------- track record / ledger ---------- */
-  .ledger{ list-style:none; margin:8px 0 0; padding:0; position:relative; }
-  .ledger::before{
-    content:"";
-    position:absolute;
-    top:6px; bottom:6px; left:118px;
-    width:1px;
-    background:var(--rule);
-  }
-  .entry{
-    display:grid;
-    grid-template-columns:118px 1fr;
-    column-gap:24px;
-    padding:22px 0;
-    position:relative;
-  }
-  .entry + .entry{ border-top:1px dashed var(--rule); }
-  .entry .when{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11.5px;
-    color:var(--ink-soft);
-    padding-top:3px;
-  }
-  .entry .when::before{
-    content:"";
-    position:absolute;
-    left:114px; top:9px;
-    width:9px; height:9px;
-    border-radius:50%;
-    background:var(--paper);
-    border:2px solid var(--gold);
-  }
-  .entry h3{
-    font-family:'Fraunces', serif;
-    font-weight:600;
-    font-size:18px;
-    margin:0 0 2px;
-  }
-  .entry .org{
-    font-size:13px;
-    color:var(--gold-deep);
-    font-weight:600;
-    margin:0 0 10px;
-  }
-  .entry ul{ margin:0; padding-left:18px; }
-  .entry li{ font-size:14px; line-height:1.6; color:#34394a; margin-bottom:5px; }
-
-  /* ---------- education ---------- */
-  .cards{ display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:6px; }
-  .card{
-    border:1px solid var(--rule);
-    border-top:3px solid var(--gold);
-    padding:20px 20px 22px;
-    background:#fffdf8;
-  }
-  .card h3{
-    font-family:'Fraunces', serif;
-    font-size:16.5px;
-    margin:0 0 4px;
-  }
-  .card .meta{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    color:var(--ink-soft);
-    margin-bottom:10px;
-    letter-spacing:.02em;
-  }
-  .card ul{ margin:0; padding-left:16px; }
-  .card li{ font-size:13.5px; line-height:1.6; color:#34394a; }
-  .gpa{
-    display:inline-block;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    color:var(--sage);
-    font-weight:600;
-    margin-top:8px;
-  }
-
-  /* ---------- capabilities ---------- */
-  .tagset{ display:flex; flex-wrap:wrap; gap:9px; margin-top:6px;}
-  .tagset span{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11.5px;
-    letter-spacing:.02em;
-    padding:8px 13px;
-    border:1px solid var(--rule);
-    border-radius:20px;
-    color:#34394a;
-    background:#fffdf8;
-  }
-
-  /* ---------- beyond ---------- */
-  .two-col{ display:grid; grid-template-columns:1.3fr 1fr; gap:34px; }
-  .two-col h4{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    letter-spacing:.1em;
-    text-transform:uppercase;
-    color:var(--ink-soft);
-    margin:0 0 14px;
-  }
-  .involve-item{ margin-bottom:16px; }
-  .involve-item .t{ font-size:14.5px; font-weight:600; margin:0 0 2px; }
-  .involve-item .d{ font-size:12.5px; color:var(--ink-soft); font-family:'IBM Plex Mono', monospace; margin:0 0 4px;}
-  .involve-item p{ font-size:13.5px; line-height:1.6; color:#34394a; margin:0; }
-  .interests{ display:flex; flex-wrap:wrap; gap:8px; align-content:flex-start; }
-  .interests span{
-    font-size:12.5px;
-    padding:6px 11px;
-    background:rgba(95,122,94,.1);
-    color:var(--sage);
-    border-radius:3px;
-    font-weight:600;
-  }
-
-  /* ---------- footer / contact ---------- */
-  .closing{
-    background:var(--navy);
-    color:#E9E4D6;
-    padding:50px 36px 40px;
-  }
-  .closing .eyebrow{ color:var(--gold); }
-  .closing .eyebrow::after{ background:var(--rule-navy); }
-  .closing h2{
-    font-family:'Fraunces', serif;
-    font-weight:500;
-    font-size:clamp(22px,3vw,28px);
-    margin:0 0 14px;
-    max-width:520px;
-  }
-  .closing p.lead{ color:#C7C2B2; font-size:14.5px; line-height:1.7; max-width:480px; margin:0 0 30px;}
-  .contact-row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:14px;
-    margin-bottom:30px;
-  }
-  .contact-row a{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:12.5px;
-    color:#E9E4D6;
-    text-decoration:none;
-    border:1px solid var(--rule-navy);
-    padding:11px 16px;
-    border-radius:2px;
-    transition:border-color .15s, color .15s;
-  }
-  .contact-row a:hover, .contact-row a:focus-visible{ border-color:var(--gold); color:var(--gold); outline:none; }
-  .btn-primary{
-    background:var(--gold);
-    color:var(--navy) !important;
-    border:1px solid var(--gold) !important;
-    font-weight:600;
-  }
-  .btn-primary:hover, .btn-primary:focus-visible{ background:#c99a3c; color:var(--navy) !important; }
-  .signoff{
-    font-family:'Fraunces', serif;
-    font-style:italic;
-    font-size:14px;
-    color:#8A8470;
-    border-top:1px solid var(--rule-navy);
-    padding-top:18px;
-  }
-
-  /* ---------- reveal animation ---------- */
-  .reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
-  .reveal.in{ opacity:1; transform:translateY(0); }
-  @media (prefers-reduced-motion: reduce){
-    .reveal{ opacity:1; transform:none; transition:none; }
-    html{ scroll-behavior:auto; }
-  }
-
-  /* ---------- responsive ---------- */
-  @media (max-width:680px){
-    .desk{ padding:0; }
-    .memo{ border-radius:0; }
-    section, .masthead, .closing{ padding-left:22px; padding-right:22px; }
-    .memo-meta{ grid-template-columns:78px 1fr; }
-    .stamp{ position:static; transform:rotate(-3deg); margin:22px 0 0; }
-    .entry{ grid-template-columns:1fr; row-gap:6px; }
-    .ledger::before{ display:none; }
-    .entry .when::before{ display:none; }
-    .cards{ grid-template-columns:1fr; }
-    .two-col{ grid-template-columns:1fr; gap:26px; }
-  }
+:root{
+  --navy:#14213D; --navy-line:#243349; --paper:#F7F5F0; --ink:#1C1C1C; --ink-soft:#5A5A52;
+  --gold:#A9772E; --gold-deep:#7C5620; --rule:#DFDACB; --card:#FFFFFF;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{ margin:0; background:var(--paper); color:var(--ink); font-family:'Inter', sans-serif; -webkit-font-smoothing:antialiased; }
+.wrap{ max-width:920px; margin:0 auto; padding:0 32px; }
+header.site-nav{ position:sticky; top:0; z-index:30; background:var(--paper); border-bottom:1px solid var(--rule); }
+header.site-nav .wrap{ display:flex; align-items:center; justify-content:space-between; padding:16px 32px; }
+.brand{ font-family:'Fraunces', serif; font-weight:600; font-size:20px; color:var(--navy); text-decoration:none; letter-spacing:-0.01em; background:none; border:none; cursor:pointer; }
+.brand span{ color:var(--gold-deep); }
+nav.links{ display:flex; gap:6px; flex-wrap:wrap; font-family:'IBM Plex Mono', monospace; }
+nav.links a{ color:var(--ink-soft); text-decoration:none; font-size:11px; letter-spacing:.08em; text-transform:uppercase; padding:8px 10px; border-radius:2px; cursor:pointer; }
+nav.links a:hover, nav.links a:focus-visible{ color:var(--gold-deep); background:rgba(169,119,46,.1); outline:none; }
+.eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold-deep); display:flex; align-items:center; gap:10px; margin:0 0 16px; }
+.eyebrow::after{ content:""; flex:1; height:1px; background:var(--rule); }
+section{ padding:56px 0; border-bottom:1px solid var(--rule); }
+section:last-of-type{ border-bottom:none; }
+h1.hero-name{ font-family:'Fraunces', serif; font-weight:600; font-size:clamp(36px,6vw,58px); letter-spacing:-0.01em; margin:0 0 6px; line-height:1.03; }
+p.hero-role{ font-size:15.5px; color:var(--ink-soft); margin:0 0 22px; max-width:560px; }
+.status-tag{ display:inline-flex; align-items:center; gap:8px; font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-deep); margin-bottom:18px; }
+.status-tag::before{ content:""; width:6px; height:6px; border-radius:50%; background:var(--gold); }
+.status-tag .dash{ width:22px; height:1px; background:var(--gold); display:inline-block; }
+.cta-row{ display:flex; gap:12px; flex-wrap:wrap; margin:22px 0 34px; }
+.btn{ display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600; padding:12px 20px; border-radius:2px; text-decoration:none; border:1px solid var(--navy); color:var(--navy); transition:all .15s; cursor:pointer; background:none; font-family:'Inter',sans-serif; }
+.btn.primary{ background:var(--navy); color:var(--paper); }
+.btn.primary:hover{ background:#1c2c4d; }
+.btn:not(.primary):hover{ background:rgba(20,33,61,.06); }
+.stat-strip{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; border-top:1px solid var(--rule); padding-top:26px; }
+.stat-strip .stat .num{ font-family:'Fraunces', serif; font-weight:600; font-size:26px; color:var(--navy); }
+.stat-strip .stat .lbl{ font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-soft); margin-top:4px; }
+h2.section-title{ font-family:'Fraunces', serif; font-weight:600; font-size:clamp(26px,3.6vw,36px); margin:0 0 10px; letter-spacing:-0.01em; }
+p.section-sub{ font-size:15px; color:var(--ink-soft); max-width:600px; margin:0 0 30px; line-height:1.6; }
+.thesis h2.statement{ font-family:'Fraunces', serif; font-weight:500; font-style:italic; font-size:clamp(22px,3.2vw,30px); line-height:1.34; margin:0 0 20px; max-width:620px; }
+.thesis h2.statement mark{ background:none; color:var(--ink); box-shadow:inset 0 -0.4em 0 rgba(169,119,46,.28); }
+.thesis p.body{ font-size:15.5px; line-height:1.75; color:#33362f; max-width:620px; }
+.domains-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+.domain-card{ background:var(--card); border:1px solid var(--rule); border-radius:4px; padding:22px 18px; }
+.domain-card .icon{ width:34px; height:34px; border:1px solid var(--gold); border-radius:4px; display:flex; align-items:center; justify-content:center; color:var(--gold-deep); margin-bottom:14px; font-size:16px; }
+.domain-card h3{ font-family:'Fraunces', serif; font-size:16.5px; margin:0 0 8px; }
+.domain-card p{ font-size:13px; color:var(--ink-soft); line-height:1.55; margin:0 0 14px; }
+.pill-row{ display:flex; flex-wrap:wrap; gap:6px; }
+.pill{ font-family:'IBM Plex Mono', monospace; font-size:10px; letter-spacing:.03em; border:1px solid var(--rule); padding:4px 8px; border-radius:2px; color:var(--ink-soft); }
+.ledger{ list-style:none; margin:8px 0 0; padding:0; position:relative; }
+.ledger::before{ content:""; position:absolute; top:6px; bottom:6px; left:118px; width:1px; background:var(--rule); }
+.entry{ display:grid; grid-template-columns:118px 1fr; column-gap:24px; padding:22px 0; position:relative; }
+.entry + .entry{ border-top:1px dashed var(--rule); }
+.entry .when{ font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--ink-soft); padding-top:3px; }
+.entry .when::before{ content:""; position:absolute; left:114px; top:9px; width:9px; height:9px; border-radius:50%; background:var(--paper); border:2px solid var(--gold); }
+.entry h3{ font-family:'Fraunces', serif; font-weight:600; font-size:18px; margin:0 0 2px; }
+.entry .org{ font-size:13px; color:var(--gold-deep); font-weight:600; margin:0 0 10px; }
+.entry ul{ margin:0; padding-left:18px; font-size:14px; line-height:1.6; color:#34372f; }
+.project-grid{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.project-card{ background:var(--card); border:1px solid var(--rule); border-radius:4px; padding:24px; text-decoration:none; color:inherit; display:flex; flex-direction:column; transition:border-color .15s; cursor:pointer; text-align:left; font-family:'Inter',sans-serif; width:100%; }
+.project-card:hover, .project-card:focus-visible{ border-color:var(--gold); outline:none; }
+.project-card.featured{ grid-column:1 / -1; }
+.tag-row{ display:flex; gap:6px; margin-bottom:14px; flex-wrap:wrap; }
+.tag{ font-family:'IBM Plex Mono', monospace; font-size:10px; letter-spacing:.04em; text-transform:uppercase; background:var(--navy); color:var(--paper); padding:4px 9px; border-radius:2px; }
+.project-card h3{ font-family:'Fraunces', serif; font-size:19px; margin:0 0 8px; }
+.project-card p.desc{ font-size:13.5px; color:var(--ink-soft); line-height:1.6; margin:0 0 14px; flex:1; }
+.outcome{ font-size:12.5px; font-weight:600; color:var(--gold-deep); border-top:1px solid var(--rule); padding-top:12px; margin-top:auto; }
+.view-more{ font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--navy); margin-top:12px; }
+.cards{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.card{ background:var(--card); border:1px solid var(--rule); border-radius:4px; padding:22px; }
+.card h3{ font-family:'Fraunces', serif; font-size:17px; margin:0 0 6px; }
+.card .meta{ font-size:12.5px; color:var(--ink-soft); margin:0 0 12px; }
+.card ul{ margin:0 0 12px; padding-left:18px; font-size:13.5px; line-height:1.6; color:#34372f; }
+.gpa{ font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:var(--gold-deep); font-weight:600; }
+.two-col{ display:grid; grid-template-columns:1.3fr 1fr; gap:40px; }
+.involve-item{ margin-bottom:20px; }
+.involve-item .t{ font-weight:600; font-size:14.5px; margin:0 0 2px; }
+.involve-item .d{ font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--gold-deep); margin:0 0 6px; }
+.involve-item p:last-child{ font-size:13.5px; color:#34372f; line-height:1.6; margin:0; }
+.interests{ display:flex; flex-wrap:wrap; gap:8px; }
+.interests span{ font-size:12.5px; border:1px solid var(--rule); padding:6px 12px; border-radius:14px; color:var(--ink-soft); }
+.contact-card{ background:var(--card); border:1px solid var(--rule); border-radius:4px; padding:24px 28px; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+.contact-card h3{ font-family:'Fraunces', serif; font-size:18px; margin:0 0 4px; }
+.contact-card .role{ font-size:13px; color:var(--ink-soft); margin:0 0 4px; }
+.contact-card .details{ font-size:12.5px; color:var(--ink-soft); font-family:'IBM Plex Mono', monospace; }
+.contact-btns{ display:flex; gap:10px; }
+.signoff{ font-family:'Fraunces', serif; font-style:italic; font-size:13.5px; color:#8A8470; margin-top:24px; }
+footer.site-foot{ padding:26px 0 60px; text-align:center; }
+footer.site-foot p{ font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft); }
+.reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
+.reveal.in{ opacity:1; transform:translateY(0); }
+@media (prefers-reduced-motion: reduce){ .reveal{ opacity:1; transform:none; transition:none; } html{ scroll-behavior:auto; } }
+.detail-back{ font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold-deep); text-decoration:none; display:inline-flex; align-items:center; gap:6px; margin-bottom:24px; background:none; border:none; cursor:pointer; padding:0; }
+.detail-meta{ font-family:'IBM Plex Mono', monospace; font-size:12px; display:grid; grid-template-columns:110px 1fr; row-gap:8px; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); padding:18px 0; margin:20px 0 30px; }
+.detail-meta dt{ color:var(--ink-soft); }
+.detail-meta dd{ margin:0; }
+.metric-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:14px; margin:22px 0; }
+.metric-box{ background:var(--card); border:1px solid var(--rule); border-radius:4px; padding:16px 18px; }
+.metric-box .num{ font-family:'Fraunces', serif; font-weight:600; font-size:22px; color:var(--navy); }
+.metric-box .lbl{ font-size:11.5px; color:var(--ink-soft); margin-top:4px; }
+article.detail-body p{ font-size:15.5px; line-height:1.75; color:#33362f; max-width:640px; }
+article.detail-body h3{ font-family:'Fraunces', serif; font-size:19px; margin:32px 0 12px; }
+.note{ font-size:13px; color:var(--ink-soft); background:var(--card); border-left:3px solid var(--gold); border-radius:0; padding:14px 16px; margin:20px 0; max-width:640px; }
+#main-view.hidden, .project-detail{ display:none; }
+.project-detail.active{ display:block; }
+@media (max-width:760px){
+  .wrap{ padding:0 20px; } .stat-strip{ grid-template-columns:1fr 1fr; row-gap:20px; } .domains-grid{ grid-template-columns:1fr 1fr; }
+  .project-grid{ grid-template-columns:1fr; } .cards{ grid-template-columns:1fr; } .two-col{ grid-template-columns:1fr; gap:26px; }
+  .entry{ grid-template-columns:1fr; row-gap:6px; } .ledger::before, .entry .when::before{ display:none; }
+  .detail-meta{ grid-template-columns:90px 1fr; } .contact-card{ flex-direction:column; align-items:flex-start; }
+}
 </style>
 </head>
 <body>
-
-<div class="desk">
-  <main class="memo">
-
-    <nav aria-label="Section navigation">
-      <a href="#thesis">Thesis</a>
-      <a href="#record">Track Record</a>
-      <a href="#education">Education</a>
-      <a href="#capabilities">Capabilities</a>
-      <a href="#beyond">Beyond the Balance Sheet</a>
-      <a href="#contact">Contact</a>
+ 
+<header class="site-nav">
+  <div class="wrap">
+    <button class="brand" onclick="showMain()">MJW<span>.</span></button>
+    <nav class="links" aria-label="Section navigation">
+      <a onclick="showMain('domains')">Domains</a>
+      <a onclick="showMain('projects')">Projects</a>
+      <a onclick="showMain('experience')">Experience</a>
+      <a onclick="showMain('education')">Education</a>
+      <a onclick="showMain('contact')">Contact</a>
     </nav>
-
-    <header class="masthead reveal">
-      <h1>Matthew&nbsp;J.&nbsp;Wagner</h1>
-      <p class="role">Finance · Entrepreneurship Minor · Farmer School of Business, Miami University</p>
-      <dl class="memo-meta">
-        <dt>TO</dt><dd>Hiring Teams &amp; Investment Committees</dd>
-        <dt>RE</dt><dd>Candidacy — Finance &amp; Venture Internships, 2027–2028</dd>
-        <dt>FROM</dt><dd>Matthew J. Wagner</dd>
-        <dt>DATE</dt><dd>June 2026</dd>
-        <dt>STATUS</dt><dd class="tag-live">Actively interviewing</dd>
-      </dl>
-    </header>
-
-    <section id="thesis" class="thesis reveal">
+  </div>
+</header>
+ 
+<main>
+ 
+<div id="main-view">
+ 
+  <section class="hero reveal">
+    <div class="wrap">
+      <p class="status-tag"><span class="dash"></span>Actively interviewing — 2027–2028</p>
+      <h1 class="hero-name">Matthew J. Wagner</h1>
+      <p class="hero-role">Finance · Wealth Management &amp; Entrepreneurship Minors · Farmer School of Business, Miami University</p>
+      <div class="cta-row">
+        <a class="btn primary" href="javascript:void(0)" onclick="showMain('projects')">View Projects ↓</a>
+        <a class="btn" href="javascript:void(0)" onclick="showMain('contact')">Get in Touch</a>
+      </div>
+      <div class="stat-strip">
+        <div class="stat"><div class="num">3.6</div><div class="lbl">GPA, Farmer School</div></div>
+        <div class="stat"><div class="num">2+</div><div class="lbl">Years managing own portfolio</div></div>
+        <div class="stat"><div class="num">3</div><div class="lbl">Ventures financially modeled</div></div>
+        <div class="stat"><div class="num">2026</div><div class="lbl">CFA Investment Foundations</div></div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="thesis" class="thesis reveal">
+    <div class="wrap">
       <p class="eyebrow">Thesis</p>
-      <h2>A finance student who <mark>builds before he's asked to.</mark></h2>
-      <p>
-        I'm a rising junior at Miami University's Farmer School of Business, pairing a finance degree
-        with an entrepreneurship minor. This summer I'm inside Rocket Companies' Center of Excellence,
-        translating client feedback into action plans for executives. Outside of internships, I've designed
-        a startup's brand identity from scratch, pitched original ventures under 48-hour deadlines, and
-        spent a year in front of credit union members solving real financial problems. I'm looking for a team
-        where that same bias toward building gets put to work on capital, companies, and deals.
+      <h2 class="statement">A finance student who <mark>builds, breaks things, and rebuilds better.</mark></h2>
+      <p class="body">
+        I'm a rising junior at Miami University's Farmer School of Business, studying finance with minors
+        in wealth management and entrepreneurship. Most of what I actually know about markets and
+        money, I learned by getting it wrong first — rebuilding a pitch competition's entire financial
+        model from scratch after realizing our first numbers were fantasy, watching a real venture's
+        margins fall short of the spreadsheet, and re-pricing a product line after the first cost model
+        didn't hold up in practice. This summer I'm inside Rocket Companies' Center of Excellence, turning
+        client feedback into action plans for executives. Outside of internships, I've built and priced
+        small businesses from the ground up, actively managed a personal investment portfolio for two-plus
+        years, and spent a year in front of credit union members solving real financial problems. I'm
+        looking for a team that wants that same instinct — build it, test it, find out where it breaks,
+        fix it — pointed at real capital and real deals.
       </p>
-      <div class="stamp" aria-hidden="true">
-        <div class="inner">
-          <span class="big">COVERAGE<br>INITIATED</span>
-          <span class="small">RATING — HIGH CONVICTION</span>
+    </div>
+  </section>
+ 
+  <section id="domains" class="reveal">
+    <div class="wrap">
+      <p class="eyebrow">Domains</p>
+      <h2 class="section-title">Four working disciplines</h2>
+      <p class="section-sub">A profile built across financial modeling, venture building, client-facing work, and active markets exposure — grounded in real projects, not just coursework.</p>
+      <div class="domains-grid">
+        <div class="domain-card">
+          <div class="icon">$</div>
+          <h3>Financial Analysis &amp; Modeling</h3>
+          <p>Revenue projections, unit economics, break-even and scenario modeling for real small businesses.</p>
+          <div class="pill-row"><span class="pill">Excel</span><span class="pill">Scenario Modeling</span><span class="pill">Break-Even</span></div>
+        </div>
+        <div class="domain-card">
+          <div class="icon">◎</div>
+          <h3>Venture Building &amp; Brand Strategy</h3>
+          <p>Brand identity, go-to-market thinking, and pitch development for early-stage ventures.</p>
+          <div class="pill-row"><span class="pill">Brand Identity</span><span class="pill">Pitch Decks</span><span class="pill">GTM</span></div>
+        </div>
+        <div class="domain-card">
+          <div class="icon">✦</div>
+          <h3>Client &amp; Stakeholder Communication</h3>
+          <p>Executive-facing presentations and direct member service inside a financial institution.</p>
+          <div class="pill-row"><span class="pill">Exec Presentations</span><span class="pill">Client Service</span></div>
+        </div>
+        <div class="domain-card">
+          <div class="icon">↗</div>
+          <h3>Investing &amp; Markets</h3>
+          <p>Two-plus years of active personal portfolio management alongside formal markets coursework.</p>
+          <div class="pill-row"><span class="pill">Portfolio Mgmt</span><span class="pill">CFA Foundations</span></div>
         </div>
       </div>
-    </section>
-
-    <section id="record" class="reveal">
-      <p class="eyebrow">Track Record</p>
+    </div>
+  </section>
+ 
+  <section id="projects" class="reveal">
+    <div class="wrap">
+      <p class="eyebrow">Work</p>
+      <h2 class="section-title">Selected Projects</h2>
+      <p class="section-sub">Ventures I've built, priced, and pitched — each with real numbers behind it, including the ones that didn't go as planned.</p>
+      <div class="project-grid">
+ 
+        <button class="project-card featured" onclick="showProject('hoo')">
+          <div class="tag-row"><span class="tag">Venture</span><span class="tag">Financial Modeling</span></div>
+          <h3>Houses of Oxford — Brand &amp; Financial Model</h3>
+          <p class="desc">Built the brand identity and a full 52-week revenue model for a local Oxford, OH apparel venture — pricing, commission structure, seasonality tied to Miami's academic calendar, and inventory reorder logic.</p>
+          <div class="outcome">37.5% gross margin on first 4 weeks of actual sales; full break-even and inventory runway model built from real data</div>
+          <div class="view-more">View case study →</div>
+        </button>
+ 
+        <button class="project-card" onclick="showProject('nt')">
+          <div class="tag-row"><span class="tag">Founder</span><span class="tag">Financial Modeling</span></div>
+          <h3>Northern Threads — Apparel Brand Financials</h3>
+          <p class="desc">Founded and modeled the financials for a print-on-demand and farmers market apparel brand, including unit economics across a hat, tee, and hoodie product mix.</p>
+          <div class="outcome">Base case Year 1: ~$6.1K revenue at 71% gross margin</div>
+          <div class="view-more">View case study →</div>
+        </button>
+ 
+        <button class="project-card" onclick="showProject('flow')">
+          <div class="tag-row"><span class="tag">Entrepreneurship</span><span class="tag">Pitch Competition</span></div>
+          <h3>Flow — Heated Glove Venture (ESP 201)</h3>
+          <p class="desc">Team venture pitch built around a heated-glove product for outdoor workers and winter sports. Rebuilt our TAM/SAM/SOM and financials after our first pass used unrealistic numbers.</p>
+          <div class="outcome">2nd place, Entrepreneurship Road Test Pitch Competition</div>
+          <div class="view-more">View case study →</div>
+        </button>
+ 
+        <button class="project-card" onclick="showProject('sw')">
+          <div class="tag-row"><span class="tag">Startup Weekend</span><span class="tag">Techstars</span></div>
+          <h3>Student-to-College Navigation Platform</h3>
+          <p class="desc">Identified a problem in how high school students navigate the college search and application process, then built and pitched a working platform concept with a team of strangers — in 48 hours.</p>
+          <div class="outcome">Built, tested, and pitched to judges and mentors in a single weekend</div>
+          <div class="view-more">View case study →</div>
+        </button>
+ 
+        <button class="project-card" onclick="showProject('inv')">
+          <div class="tag-row"><span class="tag">Investing</span><span class="tag">Personal Capital</span></div>
+          <h3>Personal Investment Portfolio</h3>
+          <p class="desc">Actively researched, built, and managed a personal investment portfolio for over two years — applying the same due diligence habits I bring to coursework and venture models.</p>
+          <div class="outcome">2+ years of continuous, active management</div>
+          <div class="view-more">View case study →</div>
+        </button>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <section id="experience" class="reveal">
+    <div class="wrap">
+      <p class="eyebrow">Background</p>
+      <h2 class="section-title">Experience</h2>
+      <p class="section-sub">From client-facing internships to founder-run ventures — a track record built across finance, brand, and operations.</p>
       <ul class="ledger">
-
         <li class="entry">
           <div class="when">MAY 2026 —<br>AUG 2026</div>
           <div>
@@ -442,7 +453,6 @@
             </ul>
           </div>
         </li>
-
         <li class="entry">
           <div class="when">NOV 2025 —<br>PRESENT</div>
           <div>
@@ -450,12 +460,23 @@
             <p class="org">Houses of Oxford · Oxford, OH</p>
             <ul>
               <li>Design brand visuals and shape early creative direction for a local startup</li>
-              <li>Align design decisions with company mission, vision, and overall strategy</li>
+              <li>Built the 52-week revenue and inventory model used to plan reorders and pricing</li>
               <li>Built the startup's logo through multiple revisions into a clean, modern local identity</li>
             </ul>
           </div>
         </li>
-
+        <li class="entry">
+          <div class="when">APR 2025 —<br>PRESENT</div>
+          <div>
+            <h3>Founder</h3>
+            <p class="org">Northern Threads · Lewiston, MI</p>
+            <ul>
+              <li>Founded a print-on-demand and farmers-market apparel brand</li>
+              <li>Built the full financial model — unit economics, break-even, and multi-scenario revenue projections</li>
+              <li>Manage product mix, pricing, and early wholesale conversations</li>
+            </ul>
+          </div>
+        </li>
         <li class="entry">
           <div class="when">FEB 2025 —<br>SEPT 2025</div>
           <div>
@@ -468,15 +489,16 @@
             </ul>
           </div>
         </li>
-
       </ul>
-    </section>
-
-    <section id="education" class="reveal">
+    </div>
+  </section>
+ 
+  <section id="education" class="reveal">
+    <div class="wrap">
       <p class="eyebrow">Education &amp; Credentials</p>
       <div class="cards">
         <div class="card">
-          <h3>B.S. Finance, Entrepreneurship Minor</h3>
+          <h3>B.S. Finance, Wealth Management &amp; Entrepreneurship Minors</h3>
           <p class="meta">Farmer School of Business · Miami University · Oxford, OH · Grad. May 2028</p>
           <ul>
             <li>2nd place, 2025 Entrepreneurship Road Test Pitch Competition</li>
@@ -493,28 +515,15 @@
           </ul>
         </div>
       </div>
-    </section>
-
-    <section id="capabilities" class="reveal">
-      <p class="eyebrow">Capabilities</p>
-      <div class="tagset">
-        <span>Financial Fundamentals</span>
-        <span>Microsoft Excel &amp; Office</span>
-        <span>Client-Facing Communication</span>
-        <span>Executive Presentations</span>
-        <span>Leadership</span>
-        <span>Time Management</span>
-        <span>Risk Assessment</span>
-        <span>Creative Problem-Finding</span>
-        <span>Brand &amp; Visual Strategy</span>
-      </div>
-    </section>
-
-    <section id="beyond" class="reveal">
+    </div>
+  </section>
+ 
+  <section id="beyond" class="reveal">
+    <div class="wrap">
       <p class="eyebrow">Beyond the Balance Sheet</p>
       <div class="two-col">
         <div>
-          <h4>Leadership &amp; Involvement</h4>
+          <h4 style="font-family:'Fraunces',serif; font-size:17px; margin:0 0 16px;">Leadership &amp; Involvement</h4>
           <div class="involve-item">
             <p class="t">Side Hustle Club, Miami University</p>
             <p class="d">Oct 2024 — Present</p>
@@ -532,39 +541,213 @@
           </div>
         </div>
         <div>
-          <h4>Outside the Office</h4>
+          <h4 style="font-family:'Fraunces',serif; font-size:17px; margin:0 0 16px;">Outside the Office</h4>
           <div class="interests">
-            <span>Investing</span>
-            <span>Golf</span>
-            <span>Hockey</span>
-            <span>Lacrosse</span>
-            <span>Hunting</span>
-            <span>Cooking</span>
-            <span>Cards</span>
-            <span>Travel</span>
+            <span>Investing</span><span>Golf</span><span>Hockey</span><span>Lacrosse</span>
+            <span>Hunting</span><span>Cooking</span><span>Cards</span><span>Travel</span>
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="contact" class="closing reveal">
-      <p class="eyebrow">Open the Position</p>
-      <h2>Looking for finance and venture roles where I can start contributing on day one.</h2>
-      <p class="lead">Open to internships and analyst-track opportunities for 2027 and 2028. Happy to walk through any line of this memo in person.</p>
-      <div class="contact-row">
-        <a class="btn-primary" href="Matthew_Wagner_Resume.pdf" target="_blank" rel="noopener">Download Résumé ↓</a>
-        <a href="mailto:wagne237@miamioh.edu">wagne237@miamioh.edu</a>
-        <a href="tel:+12482962012">(248) 296-2012</a>
-        <a href="https://www.linkedin.com/in/matthewjwagner1" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </section>
+ 
+  <section id="contact" class="reveal">
+    <div class="wrap">
+      <p class="eyebrow">Connect</p>
+      <h2 class="section-title">Let's work together</h2>
+      <p class="section-sub">Open to internships and analyst-track opportunities for 2027 and 2028. Happy to walk through any project on this page in person.</p>
+      <div class="contact-card">
+        <div>
+          <h3>Matthew J. Wagner</h3>
+          <p class="role">Finance &amp; Venture · Wealth Management</p>
+          <p class="details">wagne237@miamioh.edu · (248) 296-2012</p>
+        </div>
+        <div class="contact-btns">
+          <a class="btn primary" href="Matthew_Wagner_Resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
+          <a class="btn" href="https://www.linkedin.com/in/matthewjwagner1" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
       </div>
-      <p class="signoff">— M.J.W., Oxford, OH</p>
-    </section>
-
-  </main>
+      <p class="signoff" id="signoff">— M.J.W., Oxford, OH</p>
+    </div>
+  </section>
+ 
 </div>
-
+ 
+<div id="proj-hoo" class="project-detail">
+  <section class="reveal in">
+    <div class="wrap">
+      <button class="detail-back" onclick="showMain('projects')">← Back to projects</button>
+      <div class="tag-row"><span class="tag">Venture</span><span class="tag">Financial Modeling</span></div>
+      <h1 class="hero-name" style="font-size:clamp(28px,4.4vw,40px);">Houses of Oxford</h1>
+      <p class="hero-role">Brand identity and full financial model for a hoodie venture serving Miami University's Oxford, OH campus.</p>
+      <dl class="detail-meta">
+        <dt>Role</dt><dd>Refounding team — brand &amp; financial modeling</dd>
+        <dt>Founded</dt><dd>February 22, 2026 · Oxford, OH</dd>
+        <dt>My work</dt><dd>Brand identity, logo, and 52-week revenue/inventory model</dd>
+      </dl>
+      <article class="detail-body">
+        <p>Houses of Oxford is a hoodie brand built for Miami University's student body. I joined the refounding team to shape the brand's visual identity and to build the financial model the founders use to actually run the business — pricing, sales-rep commission, seasonality, and inventory reorder timing.</p>
+        <h3>The first four weeks, honestly</h3>
+        <p>The model isn't a projection dressed up to look good — it's built on real sales data from launch. In the first four weeks, the business sold 24 hoodies across 11 active sales reps for $960 in revenue, at a 37.5% gross margin. After paying out commission, EBITDA came in at just $18.82. That's a real, thin number, and the model shows it plainly instead of smoothing it over.</p>
+        <div class="metric-grid">
+          <div class="metric-box"><div class="num">$960</div><div class="lbl">Revenue, first 4 weeks</div></div>
+          <div class="metric-box"><div class="num">37.5%</div><div class="lbl">Gross margin</div></div>
+          <div class="metric-box"><div class="num">24</div><div class="lbl">Units sold</div></div>
+          <div class="metric-box"><div class="num">11</div><div class="lbl">Active sales reps</div></div>
+        </div>
+        <h3>Where it broke</h3>
+        <p>The break-even analysis was the uncomfortable part of the model to build: at a $0.78 contribution margin per unit after commission, the business needed roughly 13 units sold per week just to cover fixed costs. Actual sales were averaging 6 units per week — meaningfully below break-even. Rather than hide that in a rosier scenario, I built the model to surface it, because the founders needed the real number to make pricing and commission-structure decisions, not a number that felt better.</p>
+        <div class="note">Learning: a financial model's job isn't to make the venture look good — it's to tell the founders what's actually true, especially when that's the uncomfortable answer.</div>
+        <h3>Seasonality and inventory</h3>
+        <p>Because Houses of Oxford sells almost exclusively to Miami students, the 52-week model applies seasonal multipliers tied to the academic calendar — full-strength sales during active semesters, near-zero volume over summer break, and a steep drop over winter break. I paired that with an inventory runway model that flags reorder points based on a two-week supplier lead time, so the team can see exactly when current stock (53 units at time of writing) will run out under each growth scenario.</p>
+        <h3>Three growth scenarios</h3>
+        <p>The model runs conservative (flat, 0% weekly growth), base case (5% weekly growth in active season), and optimistic (12% weekly growth) scenarios across a full year, so the founders can see the range of outcomes rather than a single number they have to trust blindly.</p>
+      </article>
+    </div>
+  </section>
+</div>
+ 
+<div id="proj-nt" class="project-detail">
+  <section class="reveal in">
+    <div class="wrap">
+      <button class="detail-back" onclick="showMain('projects')">← Back to projects</button>
+      <div class="tag-row"><span class="tag">Founder</span><span class="tag">Financial Modeling</span></div>
+      <h1 class="hero-name" style="font-size:clamp(28px,4.4vw,40px);">Northern Threads</h1>
+      <p class="hero-role">Founder and financial modeler for a print-on-demand and farmers-market apparel brand based in Lewiston, MI.</p>
+      <dl class="detail-meta">
+        <dt>Role</dt><dd>Founder</dd>
+        <dt>Founded</dt><dd>2025 · Lewiston, MI</dd>
+        <dt>Channels</dt><dd>Print-on-demand, farmers market, early wholesale</dd>
+      </dl>
+      <article class="detail-body">
+        <p>Northern Threads is an apparel brand I founded and run myself — hats, tees, and hoodies sold through print-on-demand fulfillment, in-person at local farmers markets, and now moving into early wholesale conversations. I built the full financial model that runs the business: unit economics by product, break-even math, and multi-year, multi-scenario revenue projections.</p>
+        <h3>Base case numbers</h3>
+        <p>Under the base case scenario, the model projects roughly $6,053 in Year 1 revenue at a 70.8% gross margin, translating to about $3,511 in net operating income. The model runs conservative and aggressive scenarios alongside base case so I can see how sensitive the business is to sales mix and order volume before making pricing or inventory decisions.</p>
+        <div class="metric-grid">
+          <div class="metric-box"><div class="num">$6.1K</div><div class="lbl">Year 1 revenue, base case</div></div>
+          <div class="metric-box"><div class="num">70.8%</div><div class="lbl">Gross margin, Year 1</div></div>
+          <div class="metric-box"><div class="num">$3.5K</div><div class="lbl">Net operating income, Year 1</div></div>
+          <div class="metric-box"><div class="num">6</div><div class="lbl">SKUs modeled</div></div>
+        </div>
+        <h3>Product-level unit economics</h3>
+        <p>Rather than modeling revenue as one blended number, I broke out gross margin per product — the 989 Hat, Dad Hat, and Trucker Hat run margins between 32% and 42%, while the tee and hoodie line run lower due to higher per-unit production cost. That level of detail is what let me see that hats, not apparel, are the actual margin driver for this business — which shaped how I prioritize farmers market inventory.</p>
+        <h3>Break-even and the wholesale question</h3>
+        <p>At current fixed costs of roughly $775 per year, the model puts break-even at about 87 units sold annually, or just over 7 units a month — a number small enough to hit through farmers markets alone. Wholesale (a potential deal with a local golf course) is modeled starting Year 2 only, since that relationship wasn't confirmed at the time I built the model. I didn't want to count revenue that wasn't real yet.</p>
+        <div class="note">Learning: the temptation with your own venture is to model the deal you're hoping for. I built this to only count what's confirmed, and treat everything else as upside.</div>
+      </article>
+    </div>
+  </section>
+</div>
+ 
+<div id="proj-flow" class="project-detail">
+  <section class="reveal in">
+    <div class="wrap">
+      <button class="detail-back" onclick="showMain('projects')">← Back to projects</button>
+      <div class="tag-row"><span class="tag">Entrepreneurship</span><span class="tag">Pitch Competition</span></div>
+      <h1 class="hero-name" style="font-size:clamp(28px,4.4vw,40px);">Flow — Heated Glove Venture</h1>
+      <p class="hero-role">Team venture built for ESP 201: Intro to Entrepreneurship &amp; Business Models, culminating in a live investor-style pitch.</p>
+      <dl class="detail-meta">
+        <dt>Team</dt><dd>Owen Fankhauser, Tanner Lowe, Lexie Margelis, Jane Spelman, Matthew Wagner</dd>
+        <dt>Course</dt><dd>ESP 201 · Spring 2025</dd>
+        <dt>Result</dt><dd>2nd place, Entrepreneurship Road Test Pitch Competition</dd>
+      </dl>
+      <article class="detail-body">
+        <p>Flow was a semester-long venture project built around a heated glove designed for people who work or play outside in the cold — construction workers, winter sports athletes, and outdoor laborers. The product's key differentiator was an internal heat-transfer pipe design meant to preserve hand mobility and fine motor skill, which most heated-glove competitors sacrifice for warmth.</p>
+        <h3>The full build-out</h3>
+        <p>Over the semester our team moved through prototype testing and customer validation, a full market opportunity analysis identifying four direct competitors, a business model analysis narrowing our target markets from a too-broad initial list down to winter sports, medical, and construction, and a final live pitch built around TAM/SAM/SOM sizing and a differentiation narrative.</p>
+        <h3>The mistake we caught before it mattered</h3>
+        <p>Heading into final pitch practice, we made a deliberate call to rework our financial section after realizing our first pass leaned on numbers that would have gotten us an easy grade but weren't actually realistic. We chose to redo the TAM/SAM/SOM breakdown with numbers we could defend under questioning, even though it meant more work close to the deadline. That decision — prioritizing being right over looking impressive — is the single biggest thing I took from the project.</p>
+        <div class="note">Learning: an impressive-looking number that falls apart under one follow-up question is worse than a modest number you can actually defend. We rebuilt ours with three days left rather than present numbers we didn't believe.</div>
+        <h3>Sourcing and prototyping problems</h3>
+        <p>Early on, sourcing glove liners and heat-transfer materials that fit our budget was a real obstacle — several of our first tests failed outright, and we had to rebuild our prototype demonstration approach for the in-class presentation after realizing our original plan didn't translate well live. We adjusted by having one team member narrate what was happening inside the glove during the demo, since the mechanism itself wasn't visible.</p>
+        <h3>Outcome</h3>
+        <p>The venture placed 2nd in the 2025 Entrepreneurship Road Test Pitch Competition — a result built on a semester of test cards that didn't work, a financial model we scrapped and rebuilt, and a pitch we rewrote more than once to make it defensible under real questions.</p>
+      </article>
+    </div>
+  </section>
+</div>
+ 
+<div id="proj-sw" class="project-detail">
+  <section class="reveal in">
+    <div class="wrap">
+      <button class="detail-back" onclick="showMain('projects')">← Back to projects</button>
+      <div class="tag-row"><span class="tag">Startup Weekend</span><span class="tag">Techstars</span></div>
+      <h1 class="hero-name" style="font-size:clamp(28px,4.4vw,40px);">Student-to-College Navigation Platform</h1>
+      <p class="hero-role">A 48-hour venture built with a team of strangers at Startup Weekend by Techstars.</p>
+      <dl class="detail-meta">
+        <dt>Event</dt><dd>Startup Weekend by Techstars</dd>
+        <dt>Date</dt><dd>November 2024</dd>
+        <dt>Format</dt><dd>Team assembled on-site, 48 hours to build and pitch</dd>
+      </dl>
+      <article class="detail-body">
+        <p>Startup Weekend puts strangers into teams around a single weekend, with the goal of identifying a real problem, building a working solution, and pitching it to judges by Sunday night. My team landed on a problem in how high school students navigate the college search and application process — the information is scattered across guidance counselors, college websites, forums, and word of mouth, with no single place that walks a student through the process end to end.</p>
+        <h3>What we built</h3>
+        <p>Over the weekend we scoped a platform concept designed to give high school students and the colleges they're applying to a clearer, more structured way to navigate that process together — from initial research through application tracking. Working with people I'd never met before, on a compressed timeline, meant making fast calls on scope and dividing work by whatever each person was strongest at, rather than by title or plan.</p>
+        <h3>Outcome</h3>
+        <p>We built and pitched a working concept to a panel of judges and mentors by the end of the weekend — a compressed exercise in taking an idea from a whiteboard problem statement to a defensible pitch in under 48 hours.</p>
+      </article>
+    </div>
+  </section>
+</div>
+ 
+<div id="proj-inv" class="project-detail">
+  <section class="reveal in">
+    <div class="wrap">
+      <button class="detail-back" onclick="showMain('projects')">← Back to projects</button>
+      <div class="tag-row"><span class="tag">Investing</span><span class="tag">Personal Capital</span></div>
+      <h1 class="hero-name" style="font-size:clamp(28px,4.4vw,40px);">Personal Investment Portfolio</h1>
+      <p class="hero-role">Two-plus years of actively researching, building, and managing my own investment portfolio.</p>
+      <dl class="detail-meta">
+        <dt>Timeline</dt><dd>2+ years, ongoing</dd>
+        <dt>Capital</dt><dd>Personal funds</dd>
+        <dt>Approach</dt><dd>Active management and ongoing research</dd>
+      </dl>
+      <article class="detail-body">
+        <p>I've actively managed a personal investment portfolio for over two years, using it as a real testing ground for the research habits and decision frameworks I've built through coursework like the CFA Investment Foundations program. Rather than a passive index-and-forget approach, I treat this as ongoing work — researching positions, tracking thesis changes, and revisiting decisions as new information comes in.</p>
+        <h3>What this has taught me</h3>
+        <p>Managing real personal capital surfaces lessons that coursework alone doesn't — the emotional discipline of holding through a bad stretch, the temptation to chase a hot idea without doing the work first, and the difference between a thesis that sounds right and one that actually holds up under scrutiny. It's given me a much more grounded, first-hand sense of risk than any classroom simulation could.</p>
+        <div class="note">I'm glad to walk through my actual approach, positions, and performance in more detail in conversation — I'd rather have that discussion directly than publish self-reported numbers here without the context behind them.</div>
+      </article>
+    </div>
+  </section>
+</div>
+ 
+</main>
+ 
+<footer class="site-foot">
+  <p id="footer-date">© Matthew J. Wagner</p>
+</footer>
+ 
 <script>
-  const items = document.querySelectorAll('.reveal');
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const now = new Date();
+  const dateStr = months[now.getMonth()] + ' ' + now.getFullYear();
+  const footerEl = document.getElementById('footer-date');
+  if (footerEl) footerEl.textContent = '© ' + now.getFullYear() + ' Matthew J. Wagner — Updated ' + dateStr;
+ 
+  const allDetails = ['hoo','nt','flow','sw','inv'];
+ 
+  function showProject(id){
+    document.getElementById('main-view').classList.add('hidden');
+    allDetails.forEach(d => document.getElementById('proj-'+d).classList.remove('active'));
+    document.getElementById('proj-'+id).classList.add('active');
+    window.scrollTo(0,0);
+  }
+ 
+  function showMain(sectionId){
+    document.getElementById('main-view').classList.remove('hidden');
+    allDetails.forEach(d => document.getElementById('proj-'+d).classList.remove('active'));
+    if (sectionId){
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) el.scrollIntoView({behavior:'smooth'});
+      }, 30);
+    } else {
+      window.scrollTo(0,0);
+    }
+  }
+ 
+  const items = document.querySelectorAll('#main-view .reveal');
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
@@ -574,6 +757,7 @@
     items.forEach(i => i.classList.add('in'));
   }
 </script>
-
+ 
 </body>
 </html>
+ 
